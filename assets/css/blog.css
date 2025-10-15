@@ -4,6 +4,14 @@ header {
   align-items: center;
 }
 
+header .navigation li:first-child a {
+  color: initial;
+}
+
+header .navigation li:nth-child(5) a {
+  color: var(--orange);
+}
+
 .body {
   margin-top: 197px;
 }
