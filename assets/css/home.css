@@ -318,7 +318,7 @@
 .about-us__mask {
   position: absolute;
   bottom: 110px;
-  right: 0;
+  right: -60px;
 }
 
 .about-us__info {
