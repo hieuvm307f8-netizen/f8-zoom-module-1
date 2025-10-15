@@ -1,0 +1,79 @@
+.body {
+  margin-top: 197px;
+}
+
+
+.sub-title {
+  color: var(--Grey, #586863);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
+
+.title {
+  margin-top: 12px;
+  width: 670px;
+  color: var(--Dark, #0e1412);
+  /* H2 */
+  font-family: "Roboto Slab";
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 52px; /* 123.81% */
+}
+
+.desc {
+  max-width: 500px;
+  margin-top: 20px;
+  color: var(--Grey, #586863);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  letter-spacing: -0.16px;
+}
+
+form {
+  margin-top: 70px;
+}
+
+.contact__row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+input {
+  width: 570px;
+  line-height: 60px;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+  background: var(--Gray-6, #f2f2f2);
+}
+
+.contact__group--textarea textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #333;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 4px;
+  resize: none; /* Không cho người dùng kéo giãn */
+  outline: none;
+}
+
+.btn {
+  min-width: 144px;
+  line-height: 62px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 999px;
+  background-color: #0e1412;
+}
+
+footer {
+  margin-top: 150px;
+}
