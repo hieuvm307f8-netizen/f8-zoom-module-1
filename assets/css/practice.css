@@ -1,49 +1,28 @@
-
-.navigation li:first-child a {
-  color: initial;
-}
-
-nav ul li {
-  position: relative;
-}
-
-.sub-menu {
-  position: absolute;
-  left: -20px;
-  min-width: 185px;
-  background-color: var(--white);
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s;
-}
-
-.navigation > li:hover .sub-menu {
-  opacity: 1;
-  visibility: visible; 
-  height: 185px;
-}
-
-.sub-menu li a,
-.sub-menu li:first-child a {
-  padding-left: 12px;
-  color: var(--Grey, #586863);
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 28px; /* 175% */
-}
-
-.sub-menu li:hover a {
-  color: var(--orange);
-}
-
 .navigation > li:nth-child(3) > a {
   color: var(--orange);
 }
 
+.practice-menu .un-hover{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.practice-menu .hover {
+  opacity: 1;
+  visibility: visible;
+  rotate: -360deg;
+}
+
+.practice-menu:hover .hover {
+  rotate: 180deg;
+}
+
+
+.navigation > li:first-child a {
+  color: initial;
+}
+
 .practice-hero {
-  margin-top: 92px;
   text-align: center;
   display: flex;
   flex-direction: column;

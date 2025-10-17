@@ -26,10 +26,14 @@
             integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png">
         <link rel="apple-touch-icon" sizes="114x114"
             href="./assets/favicon/apple-icon-114x114.png">
         <link rel="apple-touch-icon" sizes="120x120"
@@ -75,19 +79,13 @@
 
                             <ul class="navigation">
                                 <li>
-                                    <a href="/index.html">
+                                    <a href="./index.html">
                                         Home
-                                        <img
-                                            src="./assets/svg/Home/Vector 2.svg"
-                                            alt>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="./assets/pages/about.html">
                                         About
-                                        <img
-                                            src="./assets/svg/Home/Vector 2 (1).svg"
-                                            alt>
                                     </a>
                                 </li>
                                 <li>
@@ -95,14 +93,41 @@
                                         Practice Areas
                                         <img
                                             src="./assets/svg/Home/Vector 2 (1).svg"
-                                            alt>
+                                            alt class="un-hover">
+                                        <img
+                                            src="./assets/svg/Home/Vector 2.svg"
+                                            alt class="hover">
                                     </a>
+                                    <!-- sub-menu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Divorce</a></li>
+                                        <li><a href="#">Personal Injury</a></li>
+                                        <li><a href="#">Employment</a></li>
+                                        <li><a href="#">Employment</a></li>
+                                        <li><a href="#">Family</a></li>
+                                        <li><a href="#">Property</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="./assets/pages/contact.html">Contact</a></li>
+                                <li><a
+                                        href="./assets/pages/attorneys.html">Attorney</a></li>
                                 <li>
-                                    <a href="./assets/pages/blog.html">
-                                        Blogs
+                                    <a href="#">
+                                        pages
+                                        <img
+                                            src="./assets/svg/Home/Vector 2 (1).svg"
+                                            alt class="un-hover">
+                                        <img
+                                            src="./assets/svg/Home/Vector 2.svg"
+                                            alt class="hover">
                                     </a>
+                                    <!-- sub-menu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">404</a></li>
+                                        <li><a href="#">Comming Soon</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -138,9 +163,28 @@
                             <img src="./assets/svg/Home/Mask group.svg"
                                 class="hero-image__mask">
 
-                            <a href="#" class="hero-right__cta">
-                                <img src="./assets/svg/Home/Play copy.svg" alt>
-                            </a>
+                            <!--Watch our video  -->
+                            <input type="checkbox" id="toggle-video" hidden>
+                            <label for="toggle-video" href="#"
+                                class="hero-right__cta">
+                                <img src="./assets/svg/Home/Play copy.svg"
+                                    alt>
+                            </label>
+                            <div class="overlay-video">
+                                <div class="body">
+                                    <video width="840" height="560" controls autoplay>
+                                        <source
+                                            src="./assets/videos/Law firm Promo - YouTube.mp4"
+                                            type="video/mp4">
+                                        Trình duyệt của bạn không hỗ trợ video.
+                                    </video>
+                                    <!-- close -btn -->
+                                    <label for="toggle-video"
+                                        class="video-close__btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -782,7 +826,8 @@
                                 <li><a
                                         href="./assets/pages/practice.html">Practice
                                         Areas</a></li>
-                                <li><a href="./assets/pages/contact.html">Contact</a></li>
+                                <li><a
+                                        href="./assets/pages/contact.html">Contact</a></li>
                             </ul>
                         </div>
 
@@ -791,13 +836,20 @@
                             <address class="footer-address">
                                 50 Harrison Street, PH Suite 445<br>
                                 Hoboken, NJ 07030<br>
-                                (000) 123-4567<br>
-                                yourlawfirm22@gmail.com
+                                <a href="tel:0979174581" class="call">
+                                    (000) 123-4567
+                                </a>
+                                <br>
+                                <a href="mailto:hinvu9368@gmail.com"
+                                    class="mail-to">
+                                    yourlawfirm22@gmail.com
+                                </a>
                             </address>
                         </div>
 
                         <div class="footer-column footer-map">
                             <iframe
+                                class="embeb-map"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.843675459906!2d105.72652629835885!3d21.094182639141852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455767245ab9b%3A0x4aa0f318120eec65!2zVGjGsOG7o25nIEPDoXQsIELhuq9jIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1760260394823!5m2!1svi!2s"
                                 width="470" height="268" style="border:0;"
                                 allowfullscreen loading="lazy"
@@ -809,9 +861,11 @@
 
                     <div class="footer-bottom">
                         <div class="footer-brand">
-                            <img src="./assets/svg/Home/Logo-footer.svg"
-                                alt="Justice Law Firm Logo"
-                                class="footer-logo">
+                            <a href="./index.html">
+                                <img src="./assets/svg/Home/Logo-footer.svg"
+                                    alt="Justice Law Firm Logo"
+                                    class="footer-logo">
+                            </a>
                             <p class="coppy-right">© 2022 UI HUT All Rights
                                 Reserved</p>
                         </div>
@@ -834,7 +888,6 @@
                     </div>
                 </div>
             </footer>
-
             <!-- End Footer -->
         </main>
     </body>

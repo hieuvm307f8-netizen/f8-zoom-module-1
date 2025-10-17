@@ -4,11 +4,11 @@
   padding-bottom: 100px;
 }
 
-.navigation li:first-child a {
-  color: initial;
+.navigation > li:first-child a {
+  color: initial
 }
 
-.navigation li:nth-child(2) a {
+.navigation > li:nth-child(2) a {
   color: var(--orange);
 }
 
@@ -252,7 +252,6 @@
 }
 
 
-
 .team-item .name {
   margin-top: 26px;
   color: var(--dark);
@@ -281,6 +280,10 @@
   display: flex;  
   width: 240px;
   transition: bottom 0.3s ease;
+}
+
+.socials .social-item:hover .social-icon {
+  fill: var(--orange);
 }
 
 .team-item:hover .socials {
