@@ -1,9 +1,3 @@
-.about-hero {
-  background-color: var(--yellow-light);
-  padding-top: 92px;
-  padding-bottom: 100px;
-}
-
 .navigation > li:first-child a {
   color: initial
 }
@@ -12,12 +6,29 @@
   color: var(--orange);
 }
 
+.header-logo {
+  padding: 14px 0;
+}
+
+.about-hero {
+  background-color: var(--yellow-light);
+  padding-top: 92px;
+  padding-bottom: 100px;
+  width: 100vw;
+}
+
 .about-hero {
   margin-top: 92px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.about-hero .content {
+  max-width: 1170px;
+}
+
+.about-hero .content-wrapper {
+  max-width: 670px;
+  margin: 0 auto;
 }
 
 .about-hero .sub-heading {
@@ -29,8 +40,8 @@
 }
 
 .about-hero .heading {
-  margin-top: 12px;
-  width: 670px;
+  margin-top: 12px auto;
+  max-width: 670px;
   color: var(--Dark, #0e1412);
   font-family: var(--font-type);
   font-size: 6rem;

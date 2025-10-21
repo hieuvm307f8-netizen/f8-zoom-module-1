@@ -78,7 +78,7 @@
 }
 
 .about-us .about-us__right {
-  max-width: 627px;
+  width: 627px;
   position: relative;
 }
 
@@ -795,10 +795,9 @@ figure .major {
 
 .blogs-list {
   margin-top: 70px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
 }
 
 .blogs-list .blog-item {

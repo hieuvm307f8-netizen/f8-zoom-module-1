@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/about.css">
+        <link rel="stylesheet" href="../responsive/about-responsive.css">
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57"
             href="../favicon/apple-icon-57x57.png">
@@ -38,83 +40,98 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <!-- Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <nav>
+                    <a href="../../index.html" class="header-logo">
+                        <img src="../svg/Home/Logo.svg" alt="Logo">
+                    </a>
+                    <ul class="navigation">
+                        <li>
+                            <a href="../../index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./practice.html">
+                                Practice Areas
+                                <img
+                                    src="../svg/Home/Vector 2 (1).svg"
+                                    alt class="un-hover">
+                                <img
+                                    src="../svg/Home/Vector 2.svg"
+                                    alt class="hover">
+                            </a>
+                            <!-- sub-menu -->
+                            <ul class="sub-menu">
+                                <li><a href="#">Divorce</a></li>
+                                <li><a href="#">Personal Injury</a></li>
+                                <li><a href="#">Employment</a></li>
+                                <li><a href="#">Employment</a></li>
+                                <li><a href="#">Family</a></li>
+                                <li><a href="#">Property</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Attorneys</a></li>
+                        <li>
+                            <a href="../pages/blog.html">
+                                Pages
+                                <img
+                                    src="../svg/Home/Vector 2 (1).svg"
+                                    alt class="un-hover">
+                                <img
+                                    src="../svg/Home/Vector 2.svg"
+                                    alt class="hover">
+                            </a>
+                            <!-- sub-menu -->
+                            <ul class="sub-menu">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Comming Soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="nav-contact">
+                        <a href="tel:(000) 123 456 789">call: <span>(000)
+                                123 456 789</span></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Mobile-Tablet Header -->
+        <header class="mobile-tablet-header">
+            <input type="checkbox" id="toggle-menu"
+                class="toggle-menu-input" hidden>
+            <!-- layer -->
+            <label for="toggle-menu" class="toggle-menu"></label>
+        </header>
+
         <main>
-            <!-- Header -->
-            <header>
-                <div class="content">
-                    <nav>
-                        <a href="../../index.html">
-                            <img src="../svg/Home/Logo.svg" alt="Logo">
-                        </a>
-                        <ul class="navigation">
-                            <li>
-                                <a href="../../index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="about.html">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./practice.html">
-                                    Practice Areas
-                                    <img
-                                        src="../svg/Home/Vector 2 (1).svg"
-                                        alt class="un-hover">
-                                    <img
-                                        src="../svg/Home/Vector 2.svg"
-                                        alt class="hover">
-                                </a>
-                                <!-- sub-menu -->
-                                <ul class="sub-menu">
-                                    <li><a href="#">Divorce</a></li>
-                                    <li><a href="#">Personal Injury</a></li>
-                                    <li><a href="#">Employment</a></li>
-                                    <li><a href="#">Employment</a></li>
-                                    <li><a href="#">Family</a></li>
-                                    <li><a href="#">Property</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Attorneys</a></li>
-                            <li>
-                                <a href="../pages/blog.html">
-                                    Pages
-                                    <img
-                                        src="../svg/Home/Vector 2 (1).svg"
-                                        alt class="un-hover">
-                                    <img
-                                        src="../svg/Home/Vector 2.svg"
-                                        alt class="hover">
-                                </a>
-                                <!-- sub-menu -->
-                                <ul class="sub-menu">
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">404</a></li>
-                                    <li><a href="#">Comming Soon</a></li>
-                                </ul>   
-                            </li>
-                        </ul>
-
-                        <div class="nav-contact">
-                            <a href="tel:(000) 123 456 789">call: <span>(000)
-                                    123 456 789</span></a>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            <!-- End Header -->
-
             <div class="about-hero">
                 <div class="content">
-                    <h2 class="sub-heading">WHAT WE ARE</h2>
-                    <h1 class="heading">Seriously unbelievable client
-                        service</h1>
+                    <div class="content-wrapper">
+                        <h2 class="sub-heading">WHAT WE ARE</h2>
+                        <h1 class="heading">Seriously unbelievable client
+                            service</h1>
+                    </div>
                 </div>
             </div>
 
@@ -419,91 +436,91 @@
                 </div>
             </div>
             <!-- End-Team -->
-            <!-- Footer -->
-            <footer class="footer">
-                <div class="content">
-                    <div class="footer-container">
-                        <div class="footer-column">
-                            <h3 class="footer-title">Justice</h3>
-                            <ul class="footer-links">
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Cookie Preferences</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-column">
-                            <h3 class="footer-title">Pages</h3>
-                            <ul class="footer-links">
-                                <li><a href="#home">Home</a></li>
-                                <li><a
-                                        href="./assets/pages/about.html">About</a></li>
-                                <li><a
-                                        href="./assets/pages/practice.html">Practice
-                                        Areas</a></li>
-                                <li><a
-                                        href="./assets/pages/contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-column">
-                            <h3 class="footer-title">Justice</h3>
-                            <address class="footer-address">
-                                50 Harrison Street, PH Suite 445<br>
-                                Hoboken, NJ 07030<br>
-                                <a href="tel:0979174581" class="call">
-                                    (000) 123-4567
-                                </a>
-                                <br>
-                                <a href="mailto:hinvu9368@gmail.com"
-                                    class="mail-to">
-                                    yourlawfirm22@gmail.com
-                                </a>
-                            </address>
-                        </div>
-
-                        <div class="footer-column footer-map">
-                            <iframe
-                                class="embeb-map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.843675459906!2d105.72652629835885!3d21.094182639141852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455767245ab9b%3A0x4aa0f318120eec65!2zVGjGsOG7o25nIEPDoXQsIELhuq9jIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1760260394823!5m2!1svi!2s"
-                                width="470" height="268" style="border:0;"
-                                allowfullscreen loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="content">
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Justice</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Cookie Preferences</a></li>
+                        </ul>
                     </div>
 
-                    <div class="footer-bottom">
-                        <div class="footer-brand">
-                            <a href="../../index.html">
-                                <img src="../svg/Home/Logo-footer.svg"
-                                    alt="Justice Law Firm Logo"
-                                    class="footer-logo">
-                            </a>
-                            <p class="coppy-right">© 2022 UI HUT All Rights
-                                Reserved</p>
-                        </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Pages</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a
+                                    href="./assets/pages/about.html">About</a></li>
+                            <li><a
+                                    href="./assets/pages/practice.html">Practice
+                                    Areas</a></li>
+                            <li><a
+                                    href="./assets/pages/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
 
-                        <div class="footer-socials">
-                            <a href="#">
-                                <img src="../svg/Home/facebook.svg" alt>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Justice</h3>
+                        <address class="footer-address">
+                            50 Harrison Street, PH Suite 445<br>
+                            Hoboken, NJ 07030<br>
+                            <a href="tel:0979174581" class="call">
+                                (000) 123-4567
                             </a>
-                            <a href="#">
-                                <img src="../svg/Home/linkin.svg" alt>
+                            <br>
+                            <a href="mailto:hinvu9368@gmail.com"
+                                class="mail-to">
+                                yourlawfirm22@gmail.com
                             </a>
-                            <a href="#">
-                                <img src="../svg/Home/linkin.svg" alt>
-                            </a>
-                            <a href="#">
-                                <img src="../svg/Home/ig.svg" alt>
-                            </a>
+                        </address>
+                    </div>
 
-                        </div>
+                    <div class="footer-column footer-map">
+                        <iframe
+                            class="embeb-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.843675459906!2d105.72652629835885!3d21.094182639141852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455767245ab9b%3A0x4aa0f318120eec65!2zVGjGsOG7o25nIEPDoXQsIELhuq9jIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1760260394823!5m2!1svi!2s"
+                            width="470" height="268" style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-brand">
+                        <a href="../../index.html">
+                            <img src="../svg/Home/Logo-footer.svg"
+                                alt="Justice Law Firm Logo"
+                                class="footer-logo">
+                        </a>
+                        <p class="coppy-right">© 2022 UI HUT All Rights
+                            Reserved</p>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="#">
+                            <img src="../svg/Home/facebook.svg" alt>
+                        </a>
+                        <a href="#">
+                            <img src="../svg/Home/linkin.svg" alt>
+                        </a>
+                        <a href="#">
+                            <img src="../svg/Home/linkin.svg" alt>
+                        </a>
+                        <a href="#">
+                            <img src="../svg/Home/ig.svg" alt>
+                        </a>
+
                     </div>
                 </div>
-            </footer>
-            <!-- End Footer -->
-        </main>
+            </div>
+        </footer>
+        <!-- End Footer -->
     </body>
 </html>

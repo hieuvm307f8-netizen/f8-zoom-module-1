@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/common.css">
         <link rel="stylesheet" href="./assets/css/home.css">
+        <link rel="stylesheet" href="./assets/responsive/home-responsive.css">
         <!-- Icons -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -63,74 +64,72 @@
             <header>
                 <div class="content">
                     <nav>
-                        <input type="checkbox" id="toggle" hidden checked>
-                        <label for="toggle" class="overlay"></label>
                         <label for="toggle" class="menu-display">
                             <img src="./assets/svg/Home/Menu.svg" alt="menu-bar"
                                 class="menu-bar">
                         </label>
-                        <div class="header-left">
-                            <label for="toggle" class="menu-back"><i
-                                    class="fa-solid fa-backward"></i></label>
-                            <a href="#home">
-                                <img src="./assets/svg/Home/Logo.svg" alt="logo"
-                                    class="header-logo">
-                            </a>
 
-                            <ul class="navigation">
-                                <li>
-                                    <a href="./index.html">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./assets/pages/about.html">
-                                        About
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./assets/pages/practice.html">
-                                        Practice Areas
-                                        <img
-                                            src="./assets/svg/Home/Vector 2 (1).svg"
-                                            alt class="un-hover">
-                                        <img
-                                            src="./assets/svg/Home/Vector 2.svg"
-                                            alt class="hover">
-                                    </a>
-                                    <!-- sub-menu -->
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Divorce</a></li>
-                                        <li><a href="#">Personal Injury</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Family</a></li>
-                                        <li><a href="#">Property</a></li>
-                                    </ul>
-                                </li>
-                                <li><a
-                                        href="./assets/pages/attorneys.html">Attorney</a></li>
-                                <li>
-                                    <a href="#">
-                                        pages
-                                        <img
-                                            src="./assets/svg/Home/Vector 2 (1).svg"
-                                            alt class="un-hover">
-                                        <img
-                                            src="./assets/svg/Home/Vector 2.svg"
-                                            alt class="hover">
-                                    </a>
-                                    <!-- sub-menu -->
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">404</a></li>
-                                        <li><a href="#">Comming Soon</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <label for="toggle" class="menu-back"><i
+                                class="fa-solid fa-backward"></i></label>
+                        <a href="#home" class="header-logo__wrap">
+                            <img src="./assets/svg/Home/Logo.svg" alt="logo"
+                                class="header-logo">
+                        </a>
+
+                        <ul class="navigation">
+                            <li>
+                                <a href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/about.html">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/practice.html">
+                                    Practice Areas
+                                    <img
+                                        src="./assets/svg/Home/Vector 2 (1).svg"
+                                        alt class="un-hover">
+                                    <img
+                                        src="./assets/svg/Home/Vector 2.svg"
+                                        alt class="hover">
+                                </a>
+                                <!-- sub-menu -->
+                                <ul class="sub-menu">
+                                    <li><a href="#">Divorce</a></li>
+                                    <li><a href="#">Personal Injury</a></li>
+                                    <li><a href="#">Employment</a></li>
+                                    <li><a href="#">Employment</a></li>
+                                    <li><a href="#">Family</a></li>
+                                    <li><a href="#">Property</a></li>
+                                </ul>
+                            </li>
+                            <li><a
+                                    href="./assets/pages/attorneys.html">Attorney</a></li>
+                            <li>
+                                <a href="#">
+                                    pages
+                                    <img
+                                        src="./assets/svg/Home/Vector 2 (1).svg"
+                                        alt class="un-hover">
+                                    <img
+                                        src="./assets/svg/Home/Vector 2.svg"
+                                        alt class="hover">
+                                </a>
+                                <!-- sub-menu -->
+                                <ul class="sub-menu">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">404</a></li>
+                                    <li><a href="#">Comming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
                         <div class="nav-contact">
                             <a href="tel:(000) 123 456 789">call: <span>(000)
                                     123 456 789</span></a>
@@ -139,6 +138,52 @@
                 </div>
             </header>
             <!-- End Header -->
+
+            <!-- Mobile & Tablet Header -->
+            <header class="mobile-tablet-header">
+                <input type="checkbox" id="toggle" hidden checked>
+                <label for="toggle" class="overlay"></label>
+                <div class="ease-menu">
+                    <div class="ease-menu__body">
+                        <a href="#home" class="header-logo">
+                            <img src="./assets/svg/Home/Logo.svg" alt="logo_"
+                                class="header-logo_">
+                        </a>
+                        <ul class="navigation__responsive">
+                            <li>
+                                <a href="./index.html">
+                                    Home
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/about.html">
+                                    About
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/practice.html">
+                                    Practice Areas
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
+                            </li>
+                            <li><a
+                                    href="./assets/pages/attorneys.html">
+                                    Attorney
+                                    <i class="fa-solid fa-users"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    pages
+                                    <i class="fa-solid fa-file"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
 
             <!-- hero -->
             <section class="hero">
@@ -172,7 +217,8 @@
                             </label>
                             <div class="overlay-video">
                                 <div class="body">
-                                    <video width="840" height="560" controls autoplay>
+                                    <video width="840" height="560" controls
+                                        autoplay>
                                         <source
                                             src="./assets/videos/Law firm Promo - YouTube.mp4"
                                             type="video/mp4">
@@ -785,6 +831,10 @@
                                 </a>
                                 <a href="#" class="cta">Learn More</a>
                             </div>
+                        </div>
+
+                        <div class="blogs-actions">
+                            <a href="#" class="btn btn-bottom">Browse All</a>
                         </div>
                     </div>
                 </div>
