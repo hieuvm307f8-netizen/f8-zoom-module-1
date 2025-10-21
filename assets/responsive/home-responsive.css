@@ -11,6 +11,24 @@
 
 /* Tablet and Mobile */
 @media screen and (max-width: 991px) {
+  .overlay-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  video {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .video-close__btn {
+    top: 6px;
+    left: 337px;
+  }
+
   .menu-display img {
     display: inline-block;
   }
@@ -33,7 +51,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
