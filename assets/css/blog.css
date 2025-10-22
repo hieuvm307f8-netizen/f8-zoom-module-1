@@ -8,7 +8,7 @@ header .navigation li:first-child a {
   color: initial;
 }
 
-header .navigation li:nth-child(5) a {
+header .navigation li:first-child:hover a {
   color: var(--orange);
 }
 
@@ -43,14 +43,23 @@ header .navigation li:nth-child(5) a {
   gap: 33px;
 }
 
-.blog-item {
-    width:268px;
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.blog-item .thumbnail {
-    width: 100%;
-    height: 202px;
-    object-fit: cover;
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item .thumbnail {
+  width: 100%;
+  height: 202px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .blog-title {
@@ -78,16 +87,15 @@ header .navigation li:nth-child(5) a {
 }
 
 .btns {
-    margin-top: 97px;
-    display: flex;
-    justify-content: center;
+  margin-top: 97px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
-    min-width: 160px;
+  min-width: 160px;
 }
 
-
 .footer {
-    margin-top: 150px;
+  margin-top: 150px;
 }
