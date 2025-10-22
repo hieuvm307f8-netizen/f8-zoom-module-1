@@ -1,14 +1,7 @@
-.contact {
-  margin-top: 200px;
+.body {
+  margin-top: 197px;
 }
 
-header .navigation li:first-child a {
-  color: initial;
-}
-
-header .navigation li:nth-child(4) a {
-  color: var(--orange);
-}
 
 .sub-title {
   color: var(--Grey, #586863);
