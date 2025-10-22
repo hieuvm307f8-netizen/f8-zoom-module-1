@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/practice.css">
+        <link rel="stylesheet" href="../responsive/practice-responsive.css">
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57"
             href="../favicon/apple-icon-57x57.png">
@@ -38,29 +39,43 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <!-- Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <main>
             <!-- Header -->
-            <header>
+            <header class="header__PC">
                 <div class="content">
                     <nav>
-                        <a href="../../index.html">
-                            <img src="../svg/Home/Logo.svg" alt="logo">
+                        <label for="toggle" class="menu-display">
+                            <i class="fa-solid fa-bars" class="menu-bar"></i>
+                        </label>
+
+                        <label for="toggle" class="menu-back"><i
+                                class="fa-solid fa-backward"></i></label>
+                        <!-- logo -->
+                        <a href="#home" class="header-logo__wrap">
+                            <img src="../svg/Home/Logo.svg" alt="logo"
+                                class="header-logo">
                         </a>
+
                         <ul class="navigation">
                             <li>
-                                <a href="../../index.html">
+                                <a href="./index.html">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html">
+                                <a href="./assets/pages/about.html">
                                     About
                                 </a>
                             </li>
-                            <li class="practice-menu">
-                                <a href="./practice.html">
+                            <li>
+                                <a href="./assets/pages/practice.html">
                                     Practice Areas
                                     <img
                                         src="../svg/Home/Vector 2 (1).svg"
@@ -79,10 +94,11 @@
                                     <li><a href="#">Property</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./attorneys.html">Attorneys</a></li>
+                            <li><a
+                                    href="./assets/pages/attorneys.html">Attorney</a></li>
                             <li>
                                 <a href="#">
-                                    Pages
+                                    pages
                                     <img
                                         src="../svg/Home/Vector 2 (1).svg"
                                         alt class="un-hover">
@@ -108,15 +124,61 @@
                     </nav>
                 </div>
             </header>
+            <!-- End Header -->
+
+            <!-- Mobile & Tablet Header -->
+            <header class="mobile-tablet-header">
+                <input type="checkbox" id="toggle" hidden checked>
+                <label for="toggle" class="overlay"></label>
+                <div class="ease-menu">
+                    <div class="ease-menu__body">
+                        <a href="#home" class="header-logo">
+                            <img src="../svg/Home/Logo.svg" alt="logo_"
+                                class="header-logo_">
+                        </a>
+                        <ul class="navigation__responsive">
+                            <li>
+                                <a href="./index.html">
+                                    Home
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/about.html">
+                                    About
+                                    <i class="fa-solid fa-info"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/pages/practice.html">
+                                    Practice Areas
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a>
+                            </li>
+                            <li><a
+                                    href="./assets/pages/attorneys.html">
+                                    Attorney
+                                    <i class="fa-solid fa-users"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    pages
+                                    <i class="fa-solid fa-file"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
 
             <section class="hero practice-hero">
-                <div class="content">
-                    <h1 class="heading">Our Practice Areas to Serve You</h1>
-                    <p class="desc">Where every injury is personal. We are a
-                        different kind of law firm. Let our small,
-                        passionate group of trial lawyers fight for your
-                        rights!</p>
-                </div>
+                <span>#Practice Areas</span>
+                <h1 class="heading">Our Practice Areas to Serve You</h1>
+                <p class="desc">Where every injury is personal. We are a
+                    different kind of law firm. Let our small,
+                    passionate group of trial lawyers fight for your
+                    rights!</p>
             </section>
             <!-- End Header -->
 
@@ -235,6 +297,7 @@
 
                         <div class="footer-column footer-map">
                             <iframe
+                                class="embeb-map"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14889.843675459906!2d105.72652629835885!3d21.094182639141852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455767245ab9b%3A0x4aa0f318120eec65!2zVGjGsOG7o25nIEPDoXQsIELhuq9jIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1760260394823!5m2!1svi!2s"
                                 width="470" height="268" style="border:0;"
                                 allowfullscreen loading="lazy"

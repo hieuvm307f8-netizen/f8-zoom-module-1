@@ -1,0 +1,234 @@
+/* PC */
+@media screen and (min-width: 992px) {
+  .mobile-tablet-header {
+    display: none;
+  }
+
+  .menu-display {
+    display: none;
+  }
+}
+
+/* Tablet and Mobile */
+@media screen and (max-width: 991px) {
+  .header-logo__wrap .header-logo {
+    display: none;
+  }
+
+  .mobile-tablet-header {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation__responsive .header-logo {
+    display: block;
+  }
+
+  .menu-display {
+    display: block;
+    font-size: 24px;
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  #toggle:checked ~ .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .ease-menu {
+    position: fixed;
+    inset: 0 25% 0 0;
+    background-color: #fff;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-tablet-header #toggle:checked ~ .ease-menu {
+    transform: translateX(0);
+  }
+
+  .ease-menu__body .header-logo_ {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .ease-menu__body {
+    padding: 40px;
+  }
+
+  .ease-menu__body .navigation__responsive {
+    margin-top: 80px;
+  }
+
+  .ease-menu__body .navigation__responsive li a {
+    color: #0e1412;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .footer-map .embeb-map {
+    width: 290px;
+    height: 180px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navigation {
+    display: none;
+  }
+
+  .footer .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .footer-map .embeb-map {
+    width: 298px;
+    height: 180px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-left: -10px;
+    margin-left: 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  span {
+    color: var(--Dark, #0e1412);
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 150% */
+  }
+
+  .practice-hero .heading {
+    max-width: 335px;
+    color: var(--Dark, #0e1412);
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 35px; /* 116.667% */
+  }
+
+  .practice-hero .desc {
+    margin-top: 9px;
+    max-width: 335px;
+    color: var(--Dark, #0e1412);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px; /* 180% */
+  }
+
+  .services-header .title {
+    max-width: 334px;
+    color: var(--Dark, #0e1412);
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 37px; /* 123.333% */
+  }
+
+  .services-header .desc {
+    max-width: 335px;
+    color: var(--Grey, #586863);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 21px; /* 175% */
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    margin-left: -10px;
+    margin-right: 10px;
+  }
+
+  .content-wrapper .title {
+    max-width: 100%;
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+  }
+
+  .content-wrapper .desc {
+    margin-top: 11px;
+    max-width: 276.228px;
+    color: var(--White, #fff);
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px; /* 170% */
+  }
+
+  footer .footer-container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer-title {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer .footer-column h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer .social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom .footer-brand p {
+    width: 100%;
+    color: #beccc7;
+    /* P3 */
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+}

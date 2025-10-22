@@ -2,7 +2,7 @@
   color: var(--orange);
 }
 
-.practice-menu .un-hover{
+.practice-menu .un-hover {
   opacity: 0;
   visibility: hidden;
 }
@@ -16,7 +16,6 @@
 .practice-menu:hover .hover {
   rotate: 180deg;
 }
-
 
 .navigation > li:first-child a {
   color: initial;
