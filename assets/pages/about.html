@@ -48,25 +48,34 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header__PC">
             <div class="content">
                 <nav>
-                    <a href="../../index.html" class="header-logo">
-                        <img src="../svg/Home/Logo.svg" alt="Logo">
+                    <label for="toggle" class="menu-display">
+                        <i class="fa-solid fa-bars" class="menu-bar"></i>
+                    </label>
+
+                    <label for="toggle" class="menu-back"><i
+                            class="fa-solid fa-backward"></i></label>
+                    <!-- logo -->
+                    <a href="#home" class="header-logo__wrap">
+                        <img src="../svg/Home/Logo.svg" alt="logo"
+                            class="header-logo">
                     </a>
+
                     <ul class="navigation">
                         <li>
-                            <a href="../../index.html">
+                            <a href="./index.html">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="./assets/pages/about.html">
                                 About
                             </a>
                         </li>
                         <li>
-                            <a href="./practice.html">
+                            <a href="./assets/pages/practice.html">
                                 Practice Areas
                                 <img
                                     src="../svg/Home/Vector 2 (1).svg"
@@ -85,10 +94,11 @@
                                 <li><a href="#">Property</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Attorneys</a></li>
+                        <li><a
+                                href="./assets/pages/attorneys.html">Attorney</a></li>
                         <li>
-                            <a href="../pages/blog.html">
-                                Pages
+                            <a href="#">
+                                pages
                                 <img
                                     src="../svg/Home/Vector 2 (1).svg"
                                     alt class="un-hover">
@@ -116,326 +126,159 @@
         </header>
         <!-- End Header -->
 
-        <!-- Mobile-Tablet Header -->
+        <!-- Mobile & Tablet Header -->
         <header class="mobile-tablet-header">
-            <input type="checkbox" id="toggle-menu"
-                class="toggle-menu-input" hidden>
-            <!-- layer -->
-            <label for="toggle-menu" class="toggle-menu"></label>
+            <input type="checkbox" id="toggle" hidden checked>
+            <label for="toggle" class="overlay"></label>
+            <div class="ease-menu">
+                <div class="ease-menu__body">
+                    <a href="#home" class="header-logo">
+                        <img src="../svg/Home/Logo.svg" alt="logo_"
+                            class="header-logo_">
+                    </a>
+                    <ul class="navigation__responsive">
+                        <li>
+                            <a href="./index.html">
+                                Home
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/pages/about.html">
+                                About
+                                <i class="fa-solid fa-info"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./assets/pages/practice.html">
+                                Practice Areas
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </li>
+                        <li><a
+                                href="./assets/pages/attorneys.html">
+                                Attorney
+                                <i class="fa-solid fa-users"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                pages
+                                <i class="fa-solid fa-file"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         <main>
-            <div class="about-hero">
+            <h1 class="title" style="margin-top: 200px;">
+                <div class="content">
+                    You can count on the undivided attention of a team that
+                    prizes
+                    relationships over profits.
+                </div>
+            </h1>
+
+            <sections class="videos">
+                <div class="content">
+                    <div class="content-flex">
+                        <div class="video-item">
+                            <div class="thumbnail-wraper">
+                                <img src="../image/About/thumbnail-1.png"
+                                    alt="An Interview With Raymond King"
+                                    class="thumb">
+                                <button class="play">
+                                    <img src="../svg/About/Polygon 1.svg"
+                                        alt="play">
+                                </button>
+                            </div>
+
+                            <div class="info">
+                                <h2 class="video-title">
+                                    An Interview With Raymond King
+                                </h2>
+                                <p class="desc">
+                                    Comparison between various civil law and
+                                    private
+                                    law
+                                    institutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="video-item">
+                            <div class="thumbnail-wraper">
+                                <img src="../image/About/thumbnail-2.png"
+                                    alt="An Interview With John Morgan"
+                                    class="thumb">
+                                <button class="play">
+                                    <img src="../svg/About/Polygon 1.svg"
+                                        alt="play">
+                                </button>
+                            </div>
+
+                            <div class="info">
+                                <h2 class="video-title">
+                                    An Interview With John Morgan
+                                </h2>
+                                <p class="desc">
+                                    Comparison between various civil law and
+                                    private
+                                    law
+                                    institutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sections>
+
+            <!-- History -->
+            <section class="history">
                 <div class="content">
                     <div class="content-wrapper">
-                        <h2 class="sub-heading">WHAT WE ARE</h2>
-                        <h1 class="heading">Seriously unbelievable client
-                            service</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- About Section -->
-            <section class="about-section">
-                <div class="content">
-                    <div class="content-flex">
-                        <div class="about-section__left">
-                            <span class="about-section__subtitle">
-                                WHO WE ARE
-                            </span>
-                            <h2 class="about-section__title">
-                                We look at the law differently
+                        <div class="hisory-info">
+                            <span>#History</span>
+                            <h2 class="history-title">
+                                Through And Complete Attention to Law
                             </h2>
-                            <p class="about-section__desc">
-                                By cooperating with over 100 lawyers across the
-                                region, our original values remain an integral
-                                part
-                                of our philosophy and approach to client work.
-                                We
-                                are perfectly placed to take you through.
+                            <p class="desc">
+                                While Mr. Parmele, his paralegals, and clerks
+                                are busy assisting you with your forms, helping
+                                you assemble your documentation, and keeping you
+                                updated regularly, Mr. Parmele is busy behind
+                                the scenes, focusing on winning your case.
+                                Your initial meeting with Parmele Law Firm sets
+                                in motion the difficult – and tedious – process
+                                of getting your benefits for you.
                             </p>
-                            <a href="#" class="btn">More Details</a>
                         </div>
-                        <div class="about-section__right">
-                            <img src="../image/About/section-about.png"
-                                alt="We look at the law differently"
-                                class="section-about__thumbnail">
+
+                        <div class="history-image">
+                            <img src="../image/About/thumbnail-3.png"
+                                alt="Through And Complete Attention to Law"
+                                class="thumb">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="about-section about-section__bottom">
+            <section class="exp">
                 <div class="content">
-                    <div class="content-flex">
-                        <div class="about-section__left">
-                            <span class="about-section__subtitle ">
-                                WHAT WE DO
-                            </span>
-                            <h2 class="about-section__title">
-                                Defining success together
-                            </h2>
-                            <p class="about-section__desc">
-                                The synergy between our real estate and banking
-                                and finance teams provides our clients with
-                                particular expertise on real estate project
-                                finance in each of the countries in our region.
-                            </p>
-                            <a href="#" class="btn">More Details</a>
-                        </div>
-                        <div class="about-section__right">
-                            <img src="../image/About/section-about-2.png"
-                                alt="We look at the law differently"
-                                class="section-about__thumbnail">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End-About Section -->
-
-            <!-- Quantity -->
-            <div class="quantity">
-                <div class="content">
-                    <div class="quantity-flex">
-                        <div class="quantity-item">
-                            <span class="qty-title">COMPANY FOUNDED</span>
-                            <span class="qty-number">1984</span>
-                        </div>
-
-                        <div class="quantity-item">
-                            <span class="qty-title">CASES SOLVED</span>
-                            <span class="qty-number">2450</span>
-                        </div>
-
-                        <div class="quantity-item">
-                            <span class="qty-title">Happy Clients</span>
-                            <span class="qty-number">98%</span>
-                        </div>
-
-                        <div class="quantity-item">
-                            <span class="qty-title">AWARDS WON</span>
-                            <span class="qty-number">150</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End-Quantity -->
-
-            <!-- Team -->
-            <div class="team">
-                <div class="content">
-                    <div class="team-header">
-                        <span class="team-subtitle">MEET US</span>
-                        <h2 class="team-title">Our team</h2>
-                        <p class="team-desc">Lawyers provide best legal advice
-                            under
-                            competitive terms.
+                    <div class="content-body">
+                        <h3 class="sub-title">OUR EXPERIENCE</h3>
+                        <h2 class="exp-title">20 Years of Experience In Various
+                            Cases</h2>
+                        <p class="exp-desc">
+                            Asbestos.com is proud to donate to organizations
+                            that raise awareness
+                            and support ongoing research on mesothelioma, cancer
                         </p>
                     </div>
-
-                    <div class="team-list">
-                        <!-- team-item -->
-                        <div class="team-item">
-                            <img src="../image/About/team-item 1.png"
-                                alt="Anna Torpey" class="avatar">
-                            <h3 class="name">Anna Torpey</h3>
-                            <span class="major">HEAD OF LEARNING</span>
-                            <div class="socials">
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M17.0867 11.9769H13.8048V24H8.83259V11.9769H6.46777V7.75148H8.83259V5.01717C8.83259 3.06184 9.76141 0 13.8491 0L17.5322 0.0154089V4.11688H14.8599C14.4215 4.11688 13.8052 4.33589 13.8052 5.26864V7.75542H17.5211L17.0867 11.9769Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M24 4.5585C23.1075 4.95 22.1565 5.2095 21.165 5.3355C22.185 4.7265 22.9635 3.7695 23.3295 2.616C22.3785 3.183 21.3285 3.5835 20.2095 3.807C19.3065 2.8455 18.0195 2.25 16.6155 2.25C13.8915 2.25 11.6985 4.461 11.6985 7.1715C11.6985 7.5615 11.7315 7.9365 11.8125 8.2935C7.722 8.094 4.1025 6.1335 1.671 3.147C1.2465 3.8835 0.9975 4.7265 0.9975 5.634C0.9975 7.338 1.875 8.8485 3.183 9.723C2.3925 9.708 1.617 9.4785 0.96 9.117C0.96 9.132 0.96 9.1515 0.96 9.171C0.96 11.562 2.6655 13.548 4.902 14.0055C4.5015 14.115 4.065 14.1675 3.612 14.1675C3.297 14.1675 2.979 14.1495 2.6805 14.0835C3.318 16.032 5.127 17.4645 7.278 17.511C5.604 18.8205 3.4785 19.6095 1.1775 19.6095C0.774 19.6095 0.387 19.5915 0 19.542C2.1795 20.9475 4.7625 21.75 7.548 21.75C16.602 21.75 21.552 14.25 21.552 7.749C21.552 7.5315 21.5445 7.3215 21.534 7.113C22.5105 6.42 23.331 5.5545 24 4.5585Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M24 14.5929V23.4673H18.8549V15.1877C18.8549 13.1088 18.112 11.6891 16.2492 11.6891C14.8275 11.6891 13.983 12.6449 13.61 13.5704C13.4746 13.9011 13.4397 14.3604 13.4397 14.8243V23.4669H8.29417C8.29417 23.4669 8.36324 9.44399 8.29417 7.99244H13.44V10.1853C13.4297 10.2026 13.4151 10.2195 13.4059 10.236H13.44V10.1853C14.1238 9.13319 15.3432 7.62907 18.0771 7.62907C21.4622 7.62907 24 9.84074 24 14.5929ZM2.91155 0.533203C1.1515 0.533203 0 1.68854 0 3.20648C0 4.69219 1.11812 5.8809 2.84402 5.8809H2.87741C4.672 5.8809 5.78781 4.69219 5.78781 3.20648C5.75366 1.68854 4.67199 0.533203 2.91155 0.533203ZM0.305813 23.4673H5.44938V7.99244H0.305813V23.4673Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <g clip-path="url(#clip0_313_2960)">
-                                            <path
-                                                d="M23.9763 7.05607C23.9201 5.78085 23.7139 4.90416 23.4185 4.14449C23.1137 3.33812 22.6449 2.61617 22.0306 2.01602C21.4305 1.40652 20.7038 0.932922 19.9067 0.632936C19.1427 0.337529 18.2706 0.131312 16.9954 0.0750879C15.7106 0.0141019 15.3028 0 12.0443 0C8.78588 0 8.37802 0.0141019 7.09805 0.0703262C5.82284 0.126551 4.94614 0.332951 4.18666 0.628174C3.3801 0.932922 2.65816 1.40176 2.05801 2.01602C1.44852 2.61617 0.975096 3.34288 0.674927 4.13991C0.379521 4.90416 0.173304 5.77609 0.11708 7.0513C0.056094 8.33604 0.0419922 8.7439 0.0419922 12.0023C0.0419922 15.2608 0.056094 15.6686 0.112318 16.9486C0.168543 18.2238 0.374943 19.1005 0.670349 19.8602C0.975096 20.6666 1.44852 21.3885 2.05801 21.9887C2.65816 22.5982 3.38487 23.0718 4.18189 23.3718C4.94614 23.6672 5.81808 23.8734 7.09347 23.9296C8.37326 23.986 8.7813 23.9999 12.0397 23.9999C15.2982 23.9999 15.706 23.986 16.986 23.9296C18.2612 23.8734 19.1379 23.6672 19.8974 23.3718C21.5103 22.7482 22.7855 21.4729 23.4091 19.8602C23.7044 19.096 23.9108 18.2238 23.967 16.9486C24.0232 15.6686 24.0373 15.2608 24.0373 12.0023C24.0373 8.7439 24.0325 8.33604 23.9763 7.05607ZM21.8151 16.8549C21.7634 18.027 21.5666 18.6599 21.4025 19.0819C20.9992 20.1274 20.1694 20.9572 19.1238 21.3605C18.7019 21.5246 18.0644 21.7215 16.8968 21.7729C15.631 21.8293 15.2513 21.8433 12.0491 21.8433C8.84686 21.8433 8.46245 21.8293 7.20116 21.7729C6.02905 21.7215 5.39612 21.5246 4.97416 21.3605C4.45386 21.1682 3.98026 20.8635 3.59584 20.4649C3.19733 20.0758 2.89258 19.6069 2.70028 19.0866C2.53619 18.6647 2.33931 18.027 2.28785 16.8596C2.23144 15.5937 2.21752 15.2139 2.21752 12.0117C2.21752 8.80946 2.23144 8.42505 2.28785 7.16394C2.33931 5.99183 2.53619 5.3589 2.70028 4.93694C2.89258 4.41645 3.19733 3.94303 3.60061 3.55843C3.9896 3.15992 4.45844 2.85517 4.97892 2.66306C5.40088 2.49896 6.03858 2.30209 7.20592 2.25044C8.47179 2.19422 8.85162 2.18011 12.0537 2.18011C15.2606 2.18011 15.6403 2.19422 16.9016 2.25044C18.0737 2.30209 18.7066 2.49896 19.1286 2.66306C19.6489 2.85517 20.1225 3.15992 20.5069 3.55843C20.9054 3.94761 21.2102 4.41645 21.4025 4.93694C21.5666 5.3589 21.7634 5.99641 21.8151 7.16394C21.8713 8.42981 21.8854 8.80946 21.8854 12.0117C21.8854 15.2139 21.8713 15.589 21.8151 16.8549Z"
-                                                fill="#586863" />
-                                            <path
-                                                d="M12.0442 5.83695C8.64052 5.83695 5.87894 8.59835 5.87894 12.0022C5.87894 15.4061 8.64052 18.1675 12.0442 18.1675C15.4481 18.1675 18.2095 15.4061 18.2095 12.0022C18.2095 8.59835 15.4481 5.83695 12.0442 5.83695ZM12.0442 16.0015C9.83607 16.0015 8.04495 14.2105 8.04495 12.0022C8.04495 9.7939 9.83607 8.00296 12.0442 8.00296C14.2525 8.00296 16.0435 9.7939 16.0435 12.0022C16.0435 14.2105 14.2525 16.0015 12.0442 16.0015Z"
-                                                fill="#586863" />
-                                            <path
-                                                d="M19.8927 5.59331C19.8927 6.38814 19.2482 7.03262 18.4532 7.03262C17.6583 7.03262 17.0139 6.38814 17.0139 5.59331C17.0139 4.79829 17.6583 4.15399 18.4532 4.15399C19.2482 4.15399 19.8927 4.79829 19.8927 5.59331Z"
-                                                fill="#586863" />
-                                        </g>
-                                        <defs>
-                                            <clippath id="clip0_313_2960">
-                                                <rect width="24" height="24"
-                                                    fill="white" />
-                                            </clippath>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- team-item -->
-                        <div class="team-item">
-                            <img src="../image/About/team-item 1.png"
-                                alt="Anna Torpey" class="avatar">
-                            <h3 class="name">Anna Torpey</h3>
-                            <span class="major">HEAD OF LEARNING</span>
-                            <div class="socials">
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M17.0867 11.9769H13.8048V24H8.83259V11.9769H6.46777V7.75148H8.83259V5.01717C8.83259 3.06184 9.76141 0 13.8491 0L17.5322 0.0154089V4.11688H14.8599C14.4215 4.11688 13.8052 4.33589 13.8052 5.26864V7.75542H17.5211L17.0867 11.9769Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M24 4.5585C23.1075 4.95 22.1565 5.2095 21.165 5.3355C22.185 4.7265 22.9635 3.7695 23.3295 2.616C22.3785 3.183 21.3285 3.5835 20.2095 3.807C19.3065 2.8455 18.0195 2.25 16.6155 2.25C13.8915 2.25 11.6985 4.461 11.6985 7.1715C11.6985 7.5615 11.7315 7.9365 11.8125 8.2935C7.722 8.094 4.1025 6.1335 1.671 3.147C1.2465 3.8835 0.9975 4.7265 0.9975 5.634C0.9975 7.338 1.875 8.8485 3.183 9.723C2.3925 9.708 1.617 9.4785 0.96 9.117C0.96 9.132 0.96 9.1515 0.96 9.171C0.96 11.562 2.6655 13.548 4.902 14.0055C4.5015 14.115 4.065 14.1675 3.612 14.1675C3.297 14.1675 2.979 14.1495 2.6805 14.0835C3.318 16.032 5.127 17.4645 7.278 17.511C5.604 18.8205 3.4785 19.6095 1.1775 19.6095C0.774 19.6095 0.387 19.5915 0 19.542C2.1795 20.9475 4.7625 21.75 7.548 21.75C16.602 21.75 21.552 14.25 21.552 7.749C21.552 7.5315 21.5445 7.3215 21.534 7.113C22.5105 6.42 23.331 5.5545 24 4.5585Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M24 14.5929V23.4673H18.8549V15.1877C18.8549 13.1088 18.112 11.6891 16.2492 11.6891C14.8275 11.6891 13.983 12.6449 13.61 13.5704C13.4746 13.9011 13.4397 14.3604 13.4397 14.8243V23.4669H8.29417C8.29417 23.4669 8.36324 9.44399 8.29417 7.99244H13.44V10.1853C13.4297 10.2026 13.4151 10.2195 13.4059 10.236H13.44V10.1853C14.1238 9.13319 15.3432 7.62907 18.0771 7.62907C21.4622 7.62907 24 9.84074 24 14.5929ZM2.91155 0.533203C1.1515 0.533203 0 1.68854 0 3.20648C0 4.69219 1.11812 5.8809 2.84402 5.8809H2.87741C4.672 5.8809 5.78781 4.69219 5.78781 3.20648C5.75366 1.68854 4.67199 0.533203 2.91155 0.533203ZM0.305813 23.4673H5.44938V7.99244H0.305813V23.4673Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <g clip-path="url(#clip0_313_2960)">
-                                            <path
-                                                d="M23.9763 7.05607C23.9201 5.78085 23.7139 4.90416 23.4185 4.14449C23.1137 3.33812 22.6449 2.61617 22.0306 2.01602C21.4305 1.40652 20.7038 0.932922 19.9067 0.632936C19.1427 0.337529 18.2706 0.131312 16.9954 0.0750879C15.7106 0.0141019 15.3028 0 12.0443 0C8.78588 0 8.37802 0.0141019 7.09805 0.0703262C5.82284 0.126551 4.94614 0.332951 4.18666 0.628174C3.3801 0.932922 2.65816 1.40176 2.05801 2.01602C1.44852 2.61617 0.975096 3.34288 0.674927 4.13991C0.379521 4.90416 0.173304 5.77609 0.11708 7.0513C0.056094 8.33604 0.0419922 8.7439 0.0419922 12.0023C0.0419922 15.2608 0.056094 15.6686 0.112318 16.9486C0.168543 18.2238 0.374943 19.1005 0.670349 19.8602C0.975096 20.6666 1.44852 21.3885 2.05801 21.9887C2.65816 22.5982 3.38487 23.0718 4.18189 23.3718C4.94614 23.6672 5.81808 23.8734 7.09347 23.9296C8.37326 23.986 8.7813 23.9999 12.0397 23.9999C15.2982 23.9999 15.706 23.986 16.986 23.9296C18.2612 23.8734 19.1379 23.6672 19.8974 23.3718C21.5103 22.7482 22.7855 21.4729 23.4091 19.8602C23.7044 19.096 23.9108 18.2238 23.967 16.9486C24.0232 15.6686 24.0373 15.2608 24.0373 12.0023C24.0373 8.7439 24.0325 8.33604 23.9763 7.05607ZM21.8151 16.8549C21.7634 18.027 21.5666 18.6599 21.4025 19.0819C20.9992 20.1274 20.1694 20.9572 19.1238 21.3605C18.7019 21.5246 18.0644 21.7215 16.8968 21.7729C15.631 21.8293 15.2513 21.8433 12.0491 21.8433C8.84686 21.8433 8.46245 21.8293 7.20116 21.7729C6.02905 21.7215 5.39612 21.5246 4.97416 21.3605C4.45386 21.1682 3.98026 20.8635 3.59584 20.4649C3.19733 20.0758 2.89258 19.6069 2.70028 19.0866C2.53619 18.6647 2.33931 18.027 2.28785 16.8596C2.23144 15.5937 2.21752 15.2139 2.21752 12.0117C2.21752 8.80946 2.23144 8.42505 2.28785 7.16394C2.33931 5.99183 2.53619 5.3589 2.70028 4.93694C2.89258 4.41645 3.19733 3.94303 3.60061 3.55843C3.9896 3.15992 4.45844 2.85517 4.97892 2.66306C5.40088 2.49896 6.03858 2.30209 7.20592 2.25044C8.47179 2.19422 8.85162 2.18011 12.0537 2.18011C15.2606 2.18011 15.6403 2.19422 16.9016 2.25044C18.0737 2.30209 18.7066 2.49896 19.1286 2.66306C19.6489 2.85517 20.1225 3.15992 20.5069 3.55843C20.9054 3.94761 21.2102 4.41645 21.4025 4.93694C21.5666 5.3589 21.7634 5.99641 21.8151 7.16394C21.8713 8.42981 21.8854 8.80946 21.8854 12.0117C21.8854 15.2139 21.8713 15.589 21.8151 16.8549Z"
-                                                fill="#586863" />
-                                            <path
-                                                d="M12.0442 5.83695C8.64052 5.83695 5.87894 8.59835 5.87894 12.0022C5.87894 15.4061 8.64052 18.1675 12.0442 18.1675C15.4481 18.1675 18.2095 15.4061 18.2095 12.0022C18.2095 8.59835 15.4481 5.83695 12.0442 5.83695ZM12.0442 16.0015C9.83607 16.0015 8.04495 14.2105 8.04495 12.0022C8.04495 9.7939 9.83607 8.00296 12.0442 8.00296C14.2525 8.00296 16.0435 9.7939 16.0435 12.0022C16.0435 14.2105 14.2525 16.0015 12.0442 16.0015Z"
-                                                fill="#586863" />
-                                            <path
-                                                d="M19.8927 5.59331C19.8927 6.38814 19.2482 7.03262 18.4532 7.03262C17.6583 7.03262 17.0139 6.38814 17.0139 5.59331C17.0139 4.79829 17.6583 4.15399 18.4532 4.15399C19.2482 4.15399 19.8927 4.79829 19.8927 5.59331Z"
-                                                fill="#586863" />
-                                        </g>
-                                        <defs>
-                                            <clippath id="clip0_313_2960">
-                                                <rect width="24" height="24"
-                                                    fill="white" />
-                                            </clippath>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- team-item -->
-                        <div class="team-item">
-                            <img src="../image/About/team-item 1.png"
-                                alt="Anna Torpey" class="avatar">
-                            <h3 class="name">Anna Torpey</h3>
-                            <span class="major">HEAD OF LEARNING</span>
-                            <div class="socials">
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M17.0867 11.9769H13.8048V24H8.83259V11.9769H6.46777V7.75148H8.83259V5.01717C8.83259 3.06184 9.76141 0 13.8491 0L17.5322 0.0154089V4.11688H14.8599C14.4215 4.11688 13.8052 4.33589 13.8052 5.26864V7.75542H17.5211L17.0867 11.9769Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M24 4.5585C23.1075 4.95 22.1565 5.2095 21.165 5.3355C22.185 4.7265 22.9635 3.7695 23.3295 2.616C22.3785 3.183 21.3285 3.5835 20.2095 3.807C19.3065 2.8455 18.0195 2.25 16.6155 2.25C13.8915 2.25 11.6985 4.461 11.6985 7.1715C11.6985 7.5615 11.7315 7.9365 11.8125 8.2935C7.722 8.094 4.1025 6.1335 1.671 3.147C1.2465 3.8835 0.9975 4.7265 0.9975 5.634C0.9975 7.338 1.875 8.8485 3.183 9.723C2.3925 9.708 1.617 9.4785 0.96 9.117C0.96 9.132 0.96 9.1515 0.96 9.171C0.96 11.562 2.6655 13.548 4.902 14.0055C4.5015 14.115 4.065 14.1675 3.612 14.1675C3.297 14.1675 2.979 14.1495 2.6805 14.0835C3.318 16.032 5.127 17.4645 7.278 17.511C5.604 18.8205 3.4785 19.6095 1.1775 19.6095C0.774 19.6095 0.387 19.5915 0 19.542C2.1795 20.9475 4.7625 21.75 7.548 21.75C16.602 21.75 21.552 14.25 21.552 7.749C21.552 7.5315 21.5445 7.3215 21.534 7.113C22.5105 6.42 23.331 5.5545 24 4.5585Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#" class="social-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <path
-                                            class="social-icon"
-                                            d="M24 14.5929V23.4673H18.8549V15.1877C18.8549 13.1088 18.112 11.6891 16.2492 11.6891C14.8275 11.6891 13.983 12.6449 13.61 13.5704C13.4746 13.9011 13.4397 14.3604 13.4397 14.8243V23.4669H8.29417C8.29417 23.4669 8.36324 9.44399 8.29417 7.99244H13.44V10.1853C13.4297 10.2026 13.4151 10.2195 13.4059 10.236H13.44V10.1853C14.1238 9.13319 15.3432 7.62907 18.0771 7.62907C21.4622 7.62907 24 9.84074 24 14.5929ZM2.91155 0.533203C1.1515 0.533203 0 1.68854 0 3.20648C0 4.69219 1.11812 5.8809 2.84402 5.8809H2.87741C4.672 5.8809 5.78781 4.69219 5.78781 3.20648C5.75366 1.68854 4.67199 0.533203 2.91155 0.533203ZM0.305813 23.4673H5.44938V7.99244H0.305813V23.4673Z"
-                                            fill="#586863" />
-                                    </svg>
-                                </a>
-
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none">
-                                        <g clip-path="url(#clip0_313_2960)">
-                                            <path
-                                                d="M23.9763 7.05607C23.9201 5.78085 23.7139 4.90416 23.4185 4.14449C23.1137 3.33812 22.6449 2.61617 22.0306 2.01602C21.4305 1.40652 20.7038 0.932922 19.9067 0.632936C19.1427 0.337529 18.2706 0.131312 16.9954 0.0750879C15.7106 0.0141019 15.3028 0 12.0443 0C8.78588 0 8.37802 0.0141019 7.09805 0.0703262C5.82284 0.126551 4.94614 0.332951 4.18666 0.628174C3.3801 0.932922 2.65816 1.40176 2.05801 2.01602C1.44852 2.61617 0.975096 3.34288 0.674927 4.13991C0.379521 4.90416 0.173304 5.77609 0.11708 7.0513C0.056094 8.33604 0.0419922 8.7439 0.0419922 12.0023C0.0419922 15.2608 0.056094 15.6686 0.112318 16.9486C0.168543 18.2238 0.374943 19.1005 0.670349 19.8602C0.975096 20.6666 1.44852 21.3885 2.05801 21.9887C2.65816 22.5982 3.38487 23.0718 4.18189 23.3718C4.94614 23.6672 5.81808 23.8734 7.09347 23.9296C8.37326 23.986 8.7813 23.9999 12.0397 23.9999C15.2982 23.9999 15.706 23.986 16.986 23.9296C18.2612 23.8734 19.1379 23.6672 19.8974 23.3718C21.5103 22.7482 22.7855 21.4729 23.4091 19.8602C23.7044 19.096 23.9108 18.2238 23.967 16.9486C24.0232 15.6686 24.0373 15.2608 24.0373 12.0023C24.0373 8.7439 24.0325 8.33604 23.9763 7.05607ZM21.8151 16.8549C21.7634 18.027 21.5666 18.6599 21.4025 19.0819C20.9992 20.1274 20.1694 20.9572 19.1238 21.3605C18.7019 21.5246 18.0644 21.7215 16.8968 21.7729C15.631 21.8293 15.2513 21.8433 12.0491 21.8433C8.84686 21.8433 8.46245 21.8293 7.20116 21.7729C6.02905 21.7215 5.39612 21.5246 4.97416 21.3605C4.45386 21.1682 3.98026 20.8635 3.59584 20.4649C3.19733 20.0758 2.89258 19.6069 2.70028 19.0866C2.53619 18.6647 2.33931 18.027 2.28785 16.8596C2.23144 15.5937 2.21752 15.2139 2.21752 12.0117C2.21752 8.80946 2.23144 8.42505 2.28785 7.16394C2.33931 5.99183 2.53619 5.3589 2.70028 4.93694C2.89258 4.41645 3.19733 3.94303 3.60061 3.55843C3.9896 3.15992 4.45844 2.85517 4.97892 2.66306C5.40088 2.49896 6.03858 2.30209 7.20592 2.25044C8.47179 2.19422 8.85162 2.18011 12.0537 2.18011C15.2606 2.18011 15.6403 2.19422 16.9016 2.25044C18.0737 2.30209 18.7066 2.49896 19.1286 2.66306C19.6489 2.85517 20.1225 3.15992 20.5069 3.55843C20.9054 3.94761 21.2102 4.41645 21.4025 4.93694C21.5666 5.3589 21.7634 5.99641 21.8151 7.16394C21.8713 8.42981 21.8854 8.80946 21.8854 12.0117C21.8854 15.2139 21.8713 15.589 21.8151 16.8549Z"
-                                                fill="#586863" />
-                                            <path
-                                                d="M12.0442 5.83695C8.64052 5.83695 5.87894 8.59835 5.87894 12.0022C5.87894 15.4061 8.64052 18.1675 12.0442 18.1675C15.4481 18.1675 18.2095 15.4061 18.2095 12.0022C18.2095 8.59835 15.4481 5.83695 12.0442 5.83695ZM12.0442 16.0015C9.83607 16.0015 8.04495 14.2105 8.04495 12.0022C8.04495 9.7939 9.83607 8.00296 12.0442 8.00296C14.2525 8.00296 16.0435 9.7939 16.0435 12.0022C16.0435 14.2105 14.2525 16.0015 12.0442 16.0015Z"
-                                                fill="#586863" />
-                                            <path
-                                                d="M19.8927 5.59331C19.8927 6.38814 19.2482 7.03262 18.4532 7.03262C17.6583 7.03262 17.0139 6.38814 17.0139 5.59331C17.0139 4.79829 17.6583 4.15399 18.4532 4.15399C19.2482 4.15399 19.8927 4.79829 19.8927 5.59331Z"
-                                                fill="#586863" />
-                                        </g>
-                                        <defs>
-                                            <clippath id="clip0_313_2960">
-                                                <rect width="24" height="24"
-                                                    fill="white" />
-                                            </clippath>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
-            </div>
-            <!-- End-Team -->
+            </section>
         </main>
         <!-- Footer -->
         <footer class="footer">

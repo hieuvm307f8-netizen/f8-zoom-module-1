@@ -460,6 +460,7 @@
     flex-direction: column;
     gap: 20px;
   }
+  
   .footer-bottom .footer-brand p {
     width: 100%;
     color: #beccc7;
